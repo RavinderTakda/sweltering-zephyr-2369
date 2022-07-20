@@ -14,6 +14,7 @@
      #one{
         border-right: 1px solid rgb(189, 186, 186);
         padding: 20px;
+        width: 100%;
      }
      #one > div > a{
         text-decoration: none;
@@ -38,12 +39,45 @@
         text-decoration: none;
         color: black;
         border: 1px solid rgb(189, 186, 186);
-        padding: 0px 10px;
+        padding: 0px 15px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
      }
      #option  > a:hover{
         border: 1px solid;
      }
+     #items{
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        /* border: 1px solid red; */
+        justify-content: space-between;
+        align-items: center;
+     }
+     #items > div > img{
+        width: 100%;
+        height: 80%;
+        border:1px solid rgb(189, 186, 186);
+     }
+     #items > div:first-child{
+        width: 62%;
+        height: 90%;
+     } 
+     #items > div:nth-child(2){
+        margin-top: 0px;
+     }
+     #items > div:last-child{
+        margin-top: -18px;
+     }
+    #items > div > h4{
+        margin-top: 10px;
+    }
+    #items > div > p{
+        margin-top: -10px;
+    }
+    #items > div:first-child > h4{
+        margin-top: 35px;
+    }
     </style>
 </head>
 <body>
@@ -51,7 +85,7 @@
         <div id="one">
             <div><a href="./overview.html"><h3>Overview</h3></a></div>
             <div><a href="./order_&_returns.html"><h3>Orders & Returns</h3></a></div>
-            <div><a href=""><h3>My Reviews</h3></a></div>
+            <div><a href="./my_reviews.html"><h3>My Reviews</h3></a></div>
             <div><a href=""><h3>My Lists</h3></a></div>
             <div><a href=""><h3>Account Settings</h3></a></div>
             <div><a href=""><h3>Alerts & Communcications</h3></a></div>
@@ -84,9 +118,31 @@
                 </a>
             </div>
             <div id="items">
+                <div>
                    <img src="https://ak1.ostkcdn.com/images/products/12444398/Laveno-White-Wood-7-Drawer-Dresser-b67915e4-8d9c-4672-882a-6d17cf88e9e1_600.jpg" alt="">
                    <h4>$979.99</h4>
-                   <p>Laveno White Wood 7-<br>Drawer Dresser</p>
+                   <p>Laveno White Wood 7-Drawer Dresser</p>
+                </div>
+                 <div>
+                    <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/cb2a40e372558bd0d60e30ff508f0c722fc10386/Ovis-Ezra-Mint-Green-Tufted-Platform-Bed%2C-Upholstered-Queen-Bed.jpg" alt="">
+                    <h4>$269.99 - $392.49</h4>
+                    <p>Ovis Ezra Tufted Platform Bed,<br>Upholstered Bed,...</p>
+                 </div>  
+                 <div>
+                    <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/482e23bad31b024b1fde0e6673a722f149111c5e/Clothes-Hat-Coat-Towel-Vintage-Style-Wall-Mounted-Metal-Single-Hanger-Hook.jpg" alt="">
+                    <h4>$6.79</h4>
+                    <p>Clothes Hat Coat<br>Towel Vintage Style...</p>
+                 </div>
+                 <div>
+                    <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/078059d38dcb068632f2b1701dad7fe3f92a2fff/Wood-Buffet-Sideboard-Corona-White-%7C-Furniture-Dash.jpg" alt="">
+                    <h4>$357.74</h4>
+                    <p>Wood Buffet Sideboard<br>Corona White |...</p>
+                 </div>
+                 <div>
+                    <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/d3953985492b3f497cc8d1c944aa1bf9113dd750/Safavieh-Couture-Caspian-Velvet-Bed.jpg" alt="">
+                    <h4>$1181.49 - $1376.99</h4>
+                    <p>SAFAVIEH Couture<br>Caspian Velvet Bed</p>
+                 </div>
             </div>
         </div>
     </div>
