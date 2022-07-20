@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #container{
+        margin: auto;
+        width: 80%;
+        display: flex;
+        gap: 30px;
+     }
+     #one{
+        border-right: 1px solid rgb(189, 186, 186);
+        padding: 20px;
+     }
+     #one > div > a{
+        text-decoration: none;
+        color: black;
+     }
+     #two > div:first-child{
+        margin-top: 30px;
+        display: flex;
+        gap: 400px;
+        justify-content: space-evenly;
+        /* border: 1px solid black; */
+        padding: 0px 20px;
+        background-color: #c8e8f6;
+        border-radius: 5px;
+     }
+     #option{
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+     } 
+     #option > a{
+        text-decoration: none;
+        color: black;
+        border: 1px solid rgb(189, 186, 186);
+        padding: 0px 10px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+     }
+     #option  > a:hover{
+        border: 1px solid;
+     }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="one">
+            <div><a href="./overview.html"><h3>Overview</h3></a></div>
+            <div><a href="./order_&_returns.html"><h3>Orders & Returns</h3></a></div>
+            <div><a href=""><h3>My Reviews</h3></a></div>
+            <div><a href=""><h3>My Lists</h3></a></div>
+            <div><a href=""><h3>Account Settings</h3></a></div>
+            <div><a href=""><h3>Alerts & Communcications</h3></a></div>
+            <div><a href=""><h3>Help Center</h3></a></div>
+        </div>
+        <div id="two">
+            <div>
+                <p>Not an International Customer?</p>
+                <p>Back to US site</p>
+            </div>
+            <h3>Dashboard</h3>
+            <div id="option">
+                <a href="./order_&_returns.html">
+                    <div>
+                        <h3>Orders & Returns</h3>
+                        <p>Check order status,make a return,<br>or write a review</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <h3>Account Settings</h3>
+                        <p>Change personsl information,<br>update address book and<br>authorized users</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <h3>Alerts & Communcications</h3>
+                        <p>Manage email subscriptions,<br>update content preferences and<br>product alerts</p>
+                    </div>
+                </a>
+            </div>
+            <div id="items">
+                   <img src="https://ak1.ostkcdn.com/images/products/12444398/Laveno-White-Wood-7-Drawer-Dresser-b67915e4-8d9c-4672-882a-6d17cf88e9e1_600.jpg" alt="">
+                   <h4>$979.99</h4>
+                   <p>Laveno White Wood 7-<br>Drawer Dresser</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
