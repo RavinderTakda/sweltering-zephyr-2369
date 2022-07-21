@@ -1,94 +1,370 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout</title>
     <style>
-        #container{
-            width: 64%;
-            margin: auto;
-            /* border: 1px solid red; */
-        }
-        #head{
-            padding-top: 30px;
-            display: flex;
-            border-bottom: 1px solid grey;
-        }
-        #head>img{
-            width: 200px;
-            height: 50px;
-            margin-left: 365px;
-        }
-        #head>p{
-            margin-left: 230px;
-            color: #62892c;
-            font-size: 12px;
-            position: absolute;
-            top: 60px;
-            left: 850px;
-        }
-        #head2{
-            margin-top: 20px;
-            display: flex;
-        }
-        #head2>img{
-            width: 120px;
-            height: 35px;
-        }
-        #head2>p{
-            width: 390px;
-            margin-left: 10px;
-            font-weight: 600;
-            line-height: 1;
-            font-size: 12px;
-        }
-        #select_btn>select{
-            margin-left: 800px;
-        }
-        #head3{
-            width: 90%;
-            margin-left: 35px;
-            /* border: 1px solid red; */
-        }
-        #back_to_cart{
-            font-size: 12px;
-        }
-        #form_div{
-            display: flex;
-            gap: 7px;
-            border: 1px solid red;
-        }
-    </style>
-</head>
-<body>
-    <div id="container">
-        <div id="head">
-            <img src="https://logos-download.com/wp-content/uploads/2017/01/Overstock_logo.png" alt="Overstock_logo">
-            <p>You are using our secure server</p>
-        </div>
-        <div id="head2">
-            <img src="https://ak1.ostkcdn.com/img/mxc/20170922_fedexLogo.png" alt="Fedex">
-            <p>Secure checkout provided by FedEx International. Your order total includes customs and taxes, if applicable.</p>
-        </div>
-        <div id="select_btn">
-            <select name="" id="">
-                <option value="">UnitedKingdom(English)</option>
-            </select>
-        </div>
-        <div id="head3">
-            <p id="back_to_cart">>>Back to cart</p>
-            <div id="form_div">
-                <div id="left_form">
-                    
-                </div>
-                <div id="rigth_form">
+      #container {
+        width: 64%;
+        margin: auto;
+        /* border: 1px solid red; */
+      }
+      #head {
+        padding-top: 30px;
+        display: flex;
+        border-bottom: 1px solid grey;
+      }
+      #head > img {
+        width: 200px;
+        height: 50px;
+        margin-left: 365px;
+      }
+      #head > p {
+        margin-left: 230px;
+        color: #62892c;
+        font-size: 12px;
+        position: absolute;
+        top: 60px;
+        left: 850px;
+      }
+      #head2 {
+        margin-top: 20px;
+        display: flex;
+      }
+      #head2 > img {
+        width: 120px;
+        height: 35px;
+      }
+      #head2 > p {
+        width: 390px;
+        margin-left: 10px;
+        font-weight: 600;
+        line-height: 1;
+        font-size: 12px;
+      }
+      #select_btn > select {
+        margin-left: 800px;
+      }
+      #head3 {
+        width: 90%;
+        margin-left: 35px;
+        /* border: 1px solid red; */
+      }
+      #back_to_cart {
+        font-size: 12px;
+      }
+      #form_div {
+        display: flex;
+        gap: 15px;
+        /* border: 1px solid red; */
+      }
+      #left_form {
+        width: 48%;
+        padding: 7px;
+        border: 0.5px solid grey;
+      }
+      #left_form > h5 {
+        padding: 5px;
+        background-color: rgb(240, 236, 224);
 
-                </div>
+        color: black;
+      }
+      #right_form {
+        width: 48%;
+        padding: 7px;
+        border: 0.5px solid grey;
+      }
+      #right_form > h5 {
+        padding: 5px;
+        background-color: rgb(240, 236, 224);
+
+        color: black;
+      }
+      .left_form_1 {
+        display: flex;
+        justify-content: space-between;
+      }
+      .left_form_1 > input {
+        border: 1px solid grey;
+        height: 20px;
+        margin-top: 20px;
+      }
+      #table {
+        width: 800px;
+      }
+      #shipping_details > h5 {
+        padding: 5px;
+        background-color: rgb(240, 236, 224);
+        color: black;
+      }
+      #radio {
+        display: flex;
+      }
+      #radio > p {
+        margin-left: 70px;
+      }
+      #radio1 {
+        display: flex;
+      }
+      #radio1 > p {
+        margin-left: 70px;
+      }
+      #confirm_order > h5 {
+        padding: 5px;
+        background-color: rgb(240, 236, 224);
+        color: black;
+      }
+      #confirm_order > p {
+        font-size: 14px;
+      }
+      #payment_information {
+        padding: 10px;
+        border: 1px solid rgb(240, 236, 224);
+      }
+      #payment_information > h5 {
+        padding: 5px;
+        background-color: rgb(240, 236, 224);
+        color: black;
+      }
+      #payment_information1 {
+        display: flex;
+        justify-content: space-between;
+      }
+      #payment_information1 > select {
+        border: 1px solid grey;
+        height: 20px;
+        margin-top: 20px;
+      }
+      #payment_information1 > input {
+        border: 1px solid grey;
+        height: 20px;
+        margin-top: 20px;
+      }
+      #signup_select {
+        display: flex;
+        border-bottom: 1px solid grey;
+      }
+      #place_order {
+        background-color: rgb(129, 165, 85);
+        color: white;
+        border-style: none;
+        padding: 7px;
+        border-radius: 5px;
+        margin-top: 15px;
+        margin-left: 750px;
+      }
+      #place_order:hover {
+        cursor: pointer;
+      }
+      #footer_img {
+        width: 92.5%;
+        /* border: 3px solid red; */
+        margin-left: 34px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="head">
+        <img
+          src="https://logos-download.com/wp-content/uploads/2017/01/Overstock_logo.png"
+          alt="Overstock_logo"
+        />
+        <p>You are using our secure server</p>
+      </div>
+      <div id="head2">
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/20170922_fedexLogo.png"
+          alt="Fedex"
+        />
+        <p>
+          Secure checkout provided by FedEx International. Your order total
+          includes customs and taxes, if applicable.
+        </p>
+      </div>
+      <div id="select_btn">
+        <select name="" id="">
+          <option value="">UnitedKingdom(English)</option>
+        </select>
+      </div>
+      <div id="head3">
+        <p id="back_to_cart"> >>Back to cart </p>
+        <div id="form_div">
+          <div id="left_form">
+            <h5>Billing Address</h5>
+            <div class="left_form_1">
+              <h5>Email</h5>
+              <input type="text" placeholder="Enter your emsil" />
             </div>
-            
+            <div class="left_form_1">
+              <h5>First name</h5>
+              <input type="text" placeholder="Enter your first name" />
+            </div>
+            <div class="left_form_1">
+              <h5>Last name</h5>
+              <input type="text" placeholder="Enter your last name" />
+            </div>
+            <div class="left_form_1">
+              <h5>Company</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>Address Lane 1</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>Address Lane 2</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>Country</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>State</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>ZIP code</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>Phone Number</h5>
+              <input type="number" />
+            </div>
+          </div>
+          <div id="right_form">
+            <h5>Shipping Address</h5>
+            <div class="left_form_1">
+              <h5>Email</h5>
+              <input type="text" placeholder="Enter your emsil" />
+            </div>
+            <div class="left_form_1">
+              <h5>First name</h5>
+              <input type="text" placeholder="Enter your first name" />
+            </div>
+            <div class="left_form_1">
+              <h5>Last name</h5>
+              <input type="text" placeholder="Enter your last name" />
+            </div>
+            <div class="left_form_1">
+              <h5>Company</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>Address Lane 1</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>Address Lane 2</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>Country</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>State</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>ZIP code</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>Phone Number</h5>
+              <input type="number" />
+            </div>
+          </div>
         </div>
+        <div id="item_details">
+          <table id="table">
+            <tr>
+              <th>Your Items</th>
+              <th>Price</th>
+              <th>Total price</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <div id="shipping_details">
+          <h5>Shipping Method</h5>
+          <div id="radio">
+            <input type="radio" />
+            <p>International Standard</p>
+          </div>
+          <div id="radio1">
+            <input type="radio" />
+            <p>International Express</p>
+          </div>
+        </div>
+        <div id="confirm_order">
+          <h5>Confirm Order</h5>
+          <p>Subtotal:</p>
+          <p>Shipping:</p>
+          <p>Duty and Tax:</p>
+          <p>Loss and Damage Protection remove:</p>
+          <h6>Order Total:</h6>
+        </div>
+        <div id="payment_information">
+          <h5>Payment Information</h5>
+          <div>
+            <img
+              src="https://ztransaction.bongous.com/static/css/images/pm/visa.png"
+              alt=""
+            />
+            <img
+              src="https://ztransaction.bongous.com/static/css/images/pm/mastercard.png"
+              alt=""
+            />
+            <img
+              src="https://ztransaction.bongous.com/static/css/images/pm/bitcoin.png"
+              alt=""
+            />
+          </div>
+          <div id="payment_information1">
+            <h5>Card type</h5>
+            <select name="" id="">
+              <option value="">Visa</option>
+              <option value="">Mastercard</option>
+              <option value="">Bitcoin</option>
+            </select>
+          </div>
+          <div id="payment_information1">
+            <h5>Credit Card Number</h5>
+            <input type="text" />
+          </div>
+          <div id="payment_information1">
+            <h5>Expiration Date</h5>
+            <input type="month" />
+          </div>
+          <div id="payment_information1">
+            <h5>Security Code</h5>
+            <input type="text" />
+          </div>
+        </div>
+
+        <img
+          src="https://storage.crossborder.fedex.com/s3bongous/f98ca95b1b79417f2c4685355a3cfba2.png"
+          alt=""
+        />
+
+        <div id="signup_select">
+          <input type="radio" />
+          <p>
+            When you sign up for email, you'll get exclusive coupons, sale
+            notifications, and product ideas.
+          </p>
+        </div>
+
+        <button id="place_order">Place Order>></button>
+      </div>
     </div>
-    
-</body>
+    <img id="footer_img" src="./images/Screenshot (156)b.png" alt="" />
+  </body>
 </html>
