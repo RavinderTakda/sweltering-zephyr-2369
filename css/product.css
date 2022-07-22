@@ -1,0 +1,83 @@
+/* #good{
+    border: 1px solid red;
+    width: 76%;
+    padding-left: 10px;
+    
+}
+
+#good>p{
+    margin-top: -5px;
+}
+
+#good>p:nth-child(3){
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.68);
+} */
+
+
+#cont{
+    width: 75%;
+display: flex;
+    border: 1px solid red;
+   margin-left: 360px;
+}
+
+
+
+#fouthdiv{
+    border: 1px solid rebeccapurple;
+    height: 200px;
+    margin-top: 300px;
+    width: 100%;
+    margin-right: 200px;
+}
+
+
+#thirddiv{
+    /* border: 1px solid red; */
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+#addtocart{
+    border: 1px solid rebeccapurple;
+    display: flex;
+    width: 40%;
+    background-color: #27865f ;
+    border-radius: 5px;
+    height: 46px;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+
+#addtocart>img{
+    width: 12px;
+    height: 15px;
+    color: white;
+    background-color: #27865f ;
+    padding-left: 80px;
+}
+
+
+#addtocart>p{
+   padding-left: 40px;
+    color: white;
+}
+
+
+#thirddiv>select{
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 46px;
+}
+
+#seconddiv{
+    padding-left: 20px;
+    padding-right: 20px;
+}
