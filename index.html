@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="./images/overstock-com-squarelogo-1529535998697.png">
+    <script src="https://kit.fontawesome.com/60de47e3f5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>OverStock</title>
     <style>
         * {
             margin: 0px;
@@ -18,7 +21,6 @@
             width: 100%;
             background-color: #F9FAFB;
             display: flex;
-            align-items: stretch;
             gap: 9px;
             margin-top: 7px;
         }
@@ -34,23 +36,58 @@
         #navbar {
             margin-top: 20px;
             display: flex;
-            justify-content: space-between;
-            /* border: 1px solid red; */
+            
         }
 
-        input {
+        /* input {
             background-color: #F9FAFB;
             padding-bottom: 10px;
-        }
+        } */
 
         #input {
-            padding: 9px;
+            width: 950px;
+            margin-top: 10px;
+            border: 1px solid #dadcdf;
+            border-radius: 4px 0 0 4px;
+            background-color: #f9fafb;
+            padding: 0 10px;
+            font-size: 16px;
+            appearance: none;
+            line-height: 34px;
+            margin-left: 25px;
         }
+        
+        #search_logo{
+            background-color: #ff1f2c;
+            height: 38px;
+            width: 40px;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            transform: translateX(-1px);
+            margin-top: 10px;
+        }
+        #side_nav{
+            display: flex;
+            margin-left: 5px;
+            gap: 25px;
+            padding-left: 35px;
+            padding-top: 10px;
+            
+        }
+        #btn{
+            border: none;
+            padding: 0 10px;
+            background-color: #2F3337;
+            color: white;
+            border-radius: 7px;
+        }
+       
+        
 
-        .search-logo>img {
+        /* .search-logo>img {
             height: 30px;
             width: 30px;
-        }
+        } */
 
         .account-logo>img {
             height: 30px;
@@ -90,6 +127,9 @@
         a {
             text-decoration: none;
         }
+        .search-logo{
+            display: flex;
+        }
     </style>
 </head>
 
@@ -111,66 +151,70 @@
                 alt="OverStock Logo">
         </div>
         <div class="search-logo">
-            <input type="text" placeholder="Search" size="130%" id="input">
-            <img src="https://cdn.iconscout.com/icon/free/png-64/search-1436-527970.png" alt="search-logo">
+            <input type="text" placeholder="Search"  id="input">
+            <button id="search_logo"><i  class="fa-solid fa-magnifying-glass"></i></button>
+            
         </div>
-        <div class="account-logo">
-            <img src="https://cdn.iconscout.com/icon/free/png-64/user-3603830-3005622.png" alt="account-logo">
-            <p>Account</p>
-        </div>
-        <div class="heart-logo">
-            <img src="https://cdn.iconscout.com/icon/free/png-64/heart-1121-433832.png" alt="heart-logo">
-            <p>Lists</p>
-        </div>
-        <div class="cart-logo">
-            <img src="https://cdn.iconscout.com/icon/free/png-64/cart-389-458456.png" alt="cart-logo">
-            <p>Cart</p>
+        <div id="side_nav">
+            <div class="account-logo">
+                <i class="bi bi-person"></i>
+                <!-- <img src="https://cdn.iconscout.com/icon/free/png-64/user-3603830-3005622.png" alt="account-logo"> -->
+                <p>Account</p>
+            </div>
+            <div class="heart-logo">
+                <i class="bi bi-heart"></i>
+                <!-- <img src="https://cdn.iconscout.com/icon/free/png-64/heart-1121-433832.png" alt="heart-logo"> -->
+                <p>Lists</p>
+            </div>
+            <div class="cart-logo">
+                <i class="bi bi-cart"></i>
+                <!-- <img src="https://cdn.iconscout.com/icon/free/png-64/cart-389-458456.png" alt="cart-logo"> -->
+                <p>Cart</p>
+            </div>
+            <button id="btn"><i class="bi bi-file-lock-fill"></i>Checkout</button>
         </div>
     </div>
     <div id="content">
         <div>
-            <a href="">Furniture</a>
+            <a href="furniture.html">Furniture</a>
         </div>
         <div>
-            <a href="">Rugs</a>
+            <a href="rugs.html">Rugs</a>
         </div>
         <div>
-            <a href="">Decor</a>
+            <a href="decor.html">Decor</a>
         </div>
         <div>
-            <a href="">Bedding</a>
+            <a href="bedding.html">Bedding</a>
         </div>
         <div>
-            <a href="">Home Improvement</a>
+            <a href="home_improvement.html">Home Improvement</a>
         </div>
         <div>
-            <a href="">Kitchen</a>
+            <a href="kitchen.html">Kitchen</a>
         </div>
         <div>
-            <a href="">Outdoor</a>
+            <a href="outdoor.html">Outdoor</a>
         </div>
         <div>
-            <a href="">Lighting</a>
+            <a href="lighting.html">Lighting</a>
         </div>
         <div>
-            <a href="">Kids & Baby</a>
+            <a href="kids&baby.html">Kids & Baby</a>
         </div>
         <div>
-            <a href="">More</a>
+            <a href="more.html">More</a>
         </div>
         <div>
             <p>|</p>
         </div>
         <div>
-            <a href="">Ideas</a>
+            <a href="Ideas.html">Ideas</a>
         </div>
         <div class="sales">
             <a href="">Sales & Deals</a>
         </div>
 
-    </div>
-    <div>
-        <img src="" alt="">
     </div>
 
 
