@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #details{
+        margin: auto;
+        margin-top: 60px;
+        width: 80%;  
+    }
+
+    #details > input{
+        padding: 10px 300px 10px 10px;
+    }
+    #changes{
+        margin: auto;
+        margin-top: 30px;
+        width: 80%;
+    }
+    #changes > button{
+        margin-left: 800px;
+        padding: 10px 50px;
+        background-color: #006996;
+        color: white;
+        font-size: 25px;
+        border: none;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <div id="details">
+        <h3>Manage Email Preferences</h3>
+        <p>Your Email Address (Required)</p>
+        <input type="email" >
+        <h3>Promotional Mail</h3>
+        <p>Receive Exclusive Email Offers</p>
+        <div>
+           <input type="checkbox" id="sub">
+           <label for="sub">Subscribe</label>
+           <input type="checkbox" id="unsub">
+           <label for="unsub">Unsubscribe</label>
+        </div>
+        <h3>Security Check</h3>
+    </div>
+    <div id="changes">
+         <button>Save Changes</button>
+    </div>
+</body>
+</html>
