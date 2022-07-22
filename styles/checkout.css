@@ -156,3 +156,7 @@
         /* border: 3px solid red; */
         margin-left: 34px;
       }
+      #a1{
+        display: flex;
+        justify-content: space-between;
+      }

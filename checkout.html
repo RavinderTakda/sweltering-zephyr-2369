@@ -39,7 +39,7 @@
             <h5>Billing Address</h5>
             <div class="left_form_1">
               <h5>Email</h5>
-              <input type="text" placeholder="Enter your emsil" />
+              <input type="text" placeholder="Enter your email" />
             </div>
             <div class="left_form_1">
               <h5>First name</h5>
@@ -82,7 +82,7 @@
             <h5>Shipping Address</h5>
             <div class="left_form_1">
               <h5>Email</h5>
-              <input type="text" placeholder="Enter your emsil" />
+              <input type="text" placeholder="Enter your email" />
             </div>
             <div class="left_form_1">
               <h5>First name</h5>
@@ -149,11 +149,21 @@
         </div>
         <div id="confirm_order">
           <h5>Confirm Order</h5>
-          <p>Subtotal:</p>
-          <p>Shipping:</p>
-          <p>Duty and Tax:</p>
-          <p>Loss and Damage Protection remove:</p>
-          <h6>Order Total:</h6>
+          <div id="a1">
+            <p>Subtotal:</p> <p id="subtotal"></p>
+          </div>
+          <div id="a1">
+            <p>Shipping:</p> <p>$00</p>
+          </div>
+          <div id="a1">
+            <p>Duty and Tax:</p> <p>$00</p>
+          </div>
+          <div id="a1">
+            <p>Loss and Damage Protection remove:</p> <p>300</p>
+          </div>
+          <div id="a1">
+            <h6>Order Total:</h6> <p id="totalorder"></p>
+          </div> 
         </div>
         <div id="payment_information">
           <h5>Payment Information</h5>
@@ -220,4 +230,11 @@ let sucess = ()=>{
     //window.location.href = 'index.html'
 }
 
+let bill =  JSON.parse(localStorage.getItem('cartPrice'));
+
+
+document.getElementById('subtotal').innerText = bill;
+document.getElementById('totalorder').innerText = bill;
+
 </script>
+

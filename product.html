@@ -107,10 +107,36 @@ display(data)
 
 let cartdata=JSON.parse(localStorage.getItem("cart")) || []
 
-let cart=(ele)=>{
-  cartdata.push(ele)
-  localStorage.setItem("cart",JSON.stringify(cartdata))
-  alert("Item is successfully added to cart")
+// let cart=(ele)=>{
+//   cartdata.push(ele)
+//   localStorage.setItem("cart",JSON.stringify(cartdata))
+//   alert("Item is successfully added to cart")
+//   window.location.href = "cart.html"  //delete it later when merging files
+// }
+
+var totalitemincarts = localStorage.getItem("totalitemincart")||0;
+
+let cart = (ele)=>{
+  let count = 0;
+
+  cartdata.forEach(function(elem){
+    if (ele.name == elem.name) {
+                count++;
+      };
+  });
+
+  if (count == 0) {
+            ele.qty = 1
+            cartdata.push(ele);
+            localStorage.setItem("cart", JSON.stringify(cartdata));
+            totalitemincarts++;
+            localStorage.setItem("totalitemincart",totalitemincarts);
+            //document.getElementById("carttop").innerText = totalitemincarts;
+             alert("Product added Successfully");
+        }
+        else {
+            alert("product already in the cart");
+        }
 }
 
 </script>
