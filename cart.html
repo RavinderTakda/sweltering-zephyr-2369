@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="images/overstock-com-squarelogo-1529535998697.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     
     <title>Overstock-Cart</title>
     <style>
@@ -33,6 +34,22 @@
             width: 30%;
             border: 1px solid black;
         }
+        #price_details1{
+            height: auto;
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+            flex-direction: row;
+        }
+        #price_details1>p{
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        #price_details1>i{
+            /* width: 100%; */
+           align-items: center;
+            
+        }
     </style>
 </head>
 <body>
@@ -40,7 +57,12 @@
         <h1>Shopping Cart</h1>
         <div id="box">
             <div id="container"></div>
-            <div id="price_details"></div>
+            <div id="price_details">
+                <div id="price_details1">
+                    <i class="bi bi-card-text"></i> <p>Your order summery details</p>
+
+                </div>
+            </div>
         </div>
     </div>
     
