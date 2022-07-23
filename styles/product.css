@@ -1,29 +1,8 @@
-/* #good{
-    border: 1px solid red;
-    width: 76%;
-    padding-left: 10px;
-    
-}
-
-#good>p{
-    margin-top: -5px;
-}
-
-#good>p:nth-child(3){
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.68);
-} */
-
-
 #cont{
     width: 75%;
-display: flex;
-    border: 1px solid red;
-   margin-left: 360px;
+    display: flex;
+    margin: auto;
 }
-
-
-
 #fouthdiv{
     border: 1px solid rebeccapurple;
     height: 200px;

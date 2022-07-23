@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="./styles/product.css">
 </head>
 <body>
     
@@ -107,12 +107,7 @@ display(data)
 
 let cartdata=JSON.parse(localStorage.getItem("cart")) || []
 
-// let cart=(ele)=>{
-//   cartdata.push(ele)
-//   localStorage.setItem("cart",JSON.stringify(cartdata))
-//   alert("Item is successfully added to cart")
-//   window.location.href = "cart.html"  //delete it later when merging files
-// }
+
 
 var totalitemincarts = localStorage.getItem("totalitemincart")||0;
 

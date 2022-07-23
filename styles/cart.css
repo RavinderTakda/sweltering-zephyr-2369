@@ -1,0 +1,140 @@
+
+        #root{
+            padding-top: 50px;
+            width: 80%;
+            margin: auto;
+            /* border: 1px solid red; */
+        }
+        #root>h1{
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 26px;
+            color: #2f3337;
+            font-family: HelveticaNeue,Helvetica Neue,Helvetica,Arial,sans-serif;
+        }
+        #box{
+            display: flex;
+            gap: 10px;
+            /* border: 1px solid green; */
+        }
+        #container{
+            width: 70%;
+        }
+        #price_details{
+            padding: 15px;
+            width: 30%;
+            border: 1px solid rgb(160, 158, 158);
+            height: 180px;
+        }
+        #price_details>h5{
+            font-size: 20px;
+            color: rgb(73, 72, 72);
+        }
+        .items{
+            margin-top: 7px;
+            display: flex;
+            gap: 5px;
+            border: 1px solid rgb(160, 158, 158);
+        }
+        .imgDiv{
+            padding: 15px;
+            width: 250px;
+            height: 250px;
+        }
+        .imgDiv>img{
+            width: 100%;
+        }
+
+        .detailsDiv{
+            padding-top: 30px;
+        }
+        
+        .detailsDiv>p{
+            color: rgb(104, 107, 110);
+        }
+        .detailsDiv>h3{
+            color: #2f3337;
+            font-family: HelveticaNeue,Helvetica Neue,Helvetica,Arial,sans-serif;
+            line-height: 1.5;
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+        #remove_btn{
+            margin-top: 70px;
+            margin-bottom: 20px;
+            border: none;
+            color: #2f3337;
+            background-color: white;
+            
+        }
+        .quantity-btn {
+            /* margin-top: 80px; */
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            width: 30%;
+        }
+
+        .quantity-btn>button {
+            min-height: 30px;
+            min-width: 20px;
+            border: 1px solid #2f3337;
+            background-color: transparent;
+
+        }
+
+        .quantity-btn>p {
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .quantity-btn>button:first-child {
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+        }
+
+        .quantity-btn>button:last-child {
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+
+        .quantity-btn > button:hover{
+            color: white;
+            background-color: #2f3337;
+        }
+        #quantity{
+            margin-top: 30px;
+            display: flex;
+        }
+        #quantity>h2{
+            font-size: 20px;
+            color:  rgb(107, 105, 105)
+        }
+        #total_price_div{
+            margin-top: 15px;
+            display: flex;
+        }
+        #total_price_div>h2{
+            font-size: 25px;
+            color: rgb(107, 105, 105)
+        }
+        #checkout_btn{
+            margin-top: 15px;
+            border: none;
+            background-color:  rgb(66, 64, 64);
+            color: white;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 4px;
+        }
+        #checkout_btn:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+   

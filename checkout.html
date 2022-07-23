@@ -122,20 +122,6 @@
             </div>
           </div>
         </div>
-        <div id="item_details">
-          <table id="table">
-            <tr>
-              <th>Your Items</th>
-              <th>Price</th>
-              <th>Total price</th>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </table>
-        </div>
         <div id="shipping_details">
           <h5>Shipping Method</h5>
           <div id="radio">
@@ -153,13 +139,13 @@
             <p>Subtotal:</p> <p id="subtotal"></p>
           </div>
           <div id="a1">
-            <p>Shipping:</p> <p>$00</p>
+            <p>Shipping:</p> <p>nil</p>
           </div>
           <div id="a1">
-            <p>Duty and Tax:</p> <p>$00</p>
+            <p>Duty and Tax:</p> <p>nil</p>
           </div>
           <div id="a1">
-            <p>Loss and Damage Protection remove:</p> <p>300</p>
+            <p>Loss and Damage Protection remove:</p> <p>nil</p>
           </div>
           <div id="a1">
             <h6>Order Total:</h6> <p id="totalorder"></p>
@@ -233,8 +219,8 @@ let sucess = ()=>{
 let bill =  JSON.parse(localStorage.getItem('cartPrice'));
 
 
-document.getElementById('subtotal').innerText = bill;
-document.getElementById('totalorder').innerText = bill;
+document.getElementById('subtotal').innerText = "INR  " + bill;
+document.getElementById('totalorder').innerText = "INR  " + bill;
 
 </script>
 

@@ -77,7 +77,10 @@ function removeFn(data) {
     return el.name !== data.name;
   });
   localStorage.setItem("cart", JSON.stringify(cartdata));
-  appendData()
+  localStorage.setItem("totalitemincart", totalitemincarts);
+  appendData();
+  totalPriceFn();
+
 
 }
 

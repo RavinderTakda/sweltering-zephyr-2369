@@ -1,5 +1,5 @@
 #container{
-    border: 1px solid red;
+    
     margin-top: 50px;
     width: 75%;
     display: flex;
@@ -25,21 +25,6 @@ margin-left: 360px;
 #container>div>h3{
    color: #c72040 ;
 }
-
-/* .detailsdiv{
-    border: 1px solid red;
-    width: 13%;
-    margin-left: 300px;
-    margin-top: -160px;
-    text-align: center;
-    
-} */
-/* 
-.detailsdiv>p{
-    font-size: 20px;
-    line-height: 0px;
-   
-} */
 
 
 #gooddiv{
@@ -68,7 +53,6 @@ position: absolute;
 bottom: 10%;
 right: 5%;
 font-size: 15px;
-/* border: 1px solid rgb(155, 23, 23); */
 padding-right: -70px;
 line-height: 0px;
 }
@@ -116,7 +100,7 @@ line-height: 0px;
 #cont{
     width: 75%;
 display: flex;
-    border: 1px solid red;
+    
    margin-left: 360px;
 }
 
@@ -148,7 +132,6 @@ display: flex;
     background-color: #27865f ;
     border-radius: 5px;
     height: 46px;
-    /* justify-content: space-between; */
     align-items: center;
 }
 
