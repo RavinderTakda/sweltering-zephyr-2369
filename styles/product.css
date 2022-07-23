@@ -1,7 +1,9 @@
 #cont{
+    /* border: 1px solid red; */
     width: 75%;
     display: flex;
     margin: auto;
+    margin-top: 30px;
 }
 #fouthdiv{
     border: 1px solid rebeccapurple;
@@ -59,4 +61,7 @@
 #seconddiv{
     padding-left: 20px;
     padding-right: 20px;
+}
+#seconddiv>p{
+    margin-top: 25px;
 }
