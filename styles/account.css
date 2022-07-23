@@ -1,0 +1,155 @@
+#account_page *{
+  margin-top: 15px;
+}
+
+#input{
+  height: 36px;
+}
+
+#account_page{
+  width: 80%;
+  margin: auto;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.ap{
+  font-size: 18px;
+}
+
+#account_page>div:nth-child(1){
+  display: flex;
+  justify-content: center;
+}
+
+#account_page>div>hr:nth-child(2){
+  margin: 0px;
+  height: 550px;
+  margin-top: 70px;
+}
+
+#create_account{
+  width: 35%;
+  padding: 0px 50px 0px 15px;
+}
+
+#sign_in_part{
+  width: 35%;
+  padding: 0px 15px 0px 50px;
+}
+
+#sign_up{
+  width: 100%;
+}
+
+.ai{
+  height: 30px;
+}
+
+#su_email{
+  width: 97%;
+}
+
+#sign_up>div:nth-child(2){
+  display: flex;
+  justify-content: space-between;
+}
+
+#sign_up>div:nth-child(3){
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid gray;
+  background-color: #f9fafc;
+  margin: 20px 0px;
+  border-radius: 3px;
+}
+
+#sign_up>div:nth-child(3)>input{
+  margin: 0px 0px 0px 20px;
+}
+
+#sign_up>div:nth-child(3)>p{
+  margin-top: 0px;
+  width: 87%;
+  text-align: center;
+}
+
+#sign_up>input:nth-child(4){
+  width: 100%;
+  height: 40px;
+  background-color: #0272a2;
+  color: white;
+  font-size: large;
+  font-weight: bolder;
+  border-radius: 3px;
+  border: none;
+}
+
+#sign_up+hr{
+  margin: 20px 30px;
+}
+
+#guest{
+  width: 100%;
+  height: 40px;
+  background-color: #f9fafc;
+  border: 1px solid gray;
+  font-size: large;
+  font-weight: bolder;
+  border-radius: 3px;
+}
+
+#guest_opt>p{
+  text-align: center;
+  font-size: small;
+  width: 90%;
+  margin: auto;
+  line-height: 20px;
+}
+
+#guest_opt>p:nth-child(2){
+  margin: 20px auto;
+}
+
+#guest_opt>p>a{
+  color: black;
+  font-weight: bold;
+}
+
+#sign_in>input{
+  width: 97%;
+}
+
+#sign_in>input:last-child{
+  width: 99%;
+  height: 40px;
+  background-color: #27865f;
+  color: white;
+  font-size: large;
+  font-weight: bolder;
+  border-radius: 3px;
+  border: none;
+  margin: 20px 0px;
+}
+
+#sign_in+a{
+  color: #0272a2;
+  font-weight: bold;
+  margin-left: 130px;
+  text-decoration: underline;
+}
+
+#bottom{
+ list-style: none;
+ padding-left: 0px;
+ margin-bottom: 0px;
+}
+
+#bottom>li>a{
+  text-decoration: none;
+  color: black;
+ }
+
+ #bottom>li{
+  font-size: small;
+ }
