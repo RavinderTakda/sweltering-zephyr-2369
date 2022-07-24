@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 20%;
+            margin: 10px 10px;
+        }
+
+        .carousel{
+            border: 2px solid #ccc;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .slider{
+            height: 100%;
+            display: flex;
+            width: 400%;
+        }
+
+        .slider section{
+            flex-basis: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="carousel">
+            <div class="slider">
+                <section>content for section 1</section>
+                <section>content for section 2</section>
+                <section>content for section 3</section>
+                <section>content for section 4</section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

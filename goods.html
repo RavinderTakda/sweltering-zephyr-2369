@@ -76,11 +76,12 @@
 <div id="sortby">
     <p id="h1">Sort by:</p>
 
-    <select name="" id="select">
+    <select onchange="calljaldi()" name="" id="select">
+        <option value="">Select</option>
+        <option   id="lowtohigh" value="Price Low - High">Price Low - High</option>
+        <option  id="hightolow" value="Price High - Low">Price High - Low</option>
         <option id="bestselling" value="">Best Selling</option>
-        <option id="onsale" value="">On Sale</option>
-        <option id="lowtohigh" value="">Price Low - High</option>
-        <option id="hightolow" value="">Price High - Low</option>
+        <option  id="onsale" value="">On Sale</option>
         <option id="customerrating" value="">Customer Rating</option>
         <option id="newarrivals" value="">New Arrivals</option>
     </select>
@@ -122,6 +123,13 @@
 
 let x="1k"
 
+
+
+ 
+
+   let display=(arr)=>{
+
+   document.querySelector("#container").innerHTML=""
     arr.forEach((ele)=>{
 
         let goods=document.createElement("div")
@@ -131,7 +139,7 @@ let x="1k"
         goodsdiv.setAttribute("id","gooddiv")
         goodsdiv.addEventListener("click",function(){
             cartpage(ele)
-        window.location.href="product.html"
+        // window.location.href="product.html"
         })
 
        let img=document.createElement("img")
@@ -172,11 +180,12 @@ let x="1k"
        document.querySelector("#container").append(goodsdiv)
 
     })
-
+   }
 
 
 let detail =(ele)=>{
     console.log(ele)
+    document.querySelector("#cont").innerHTML=""
     let firstdiv=document.createElement("div")
     firstdiv.setAttribute("id","firstdiv")
 
@@ -275,4 +284,31 @@ let cartpage =(ele)=>{
    
     localStorage.setItem("cartpage",JSON.stringify(ele))
 }
+
+
+
+let calljaldi=()=>{
+  let x=document.querySelector("#select").value
+  if(x=="Price Low - High"){
+    arr.sort((a,b)=>{
+        return a.price-b.price
+    })
+ 
+    display(arr)
+  }
+
+  if(x=="Price High - Low"){
+    arr.sort((a,b)=>{
+        return b.price-a.price
+    })
+   
+    display(arr)
+  }
+
+ 
+
+}
+
+display(arr)
+
 </script>
