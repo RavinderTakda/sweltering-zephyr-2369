@@ -27,6 +27,7 @@
     <div id="navbar">
       <div class="company-logo">
         <img
+        onclick="home()"
           src="https://lh3.googleusercontent.com/lCRlZYOdeHIbclzCoJBiJmLyKW1njA2SqQd7GMKiKSE8C_LzQ-cPvageX_AsYBTCvmYI9A=s170"
           alt="OverStock Logo"
         />
@@ -110,7 +111,7 @@
         <p>Fresh ways to save on your Summer home refresh</p>
       </div>
 
-      <button class="button">Shop Now</button>
+      <button onclick="good()" class="button">Shop Now</button>
     </div>
 
     <!-- second  div -->
@@ -176,7 +177,7 @@
         <p>back to campus basics</p>
         <p>Save on Dorm Goods & School Essentials</p>
       </div>
-      <button class="campusshop">Shop Now</button>
+      <button onclick="good()" class="campusshop">Shop Now</button>
     </div>
 
     <!-- fourth div -->
@@ -335,7 +336,7 @@
         <p>Shop Patio Umbrellas & Shades</p>
       </div>
 
-      <button class="Umbrellas">Shop Now</button>
+      <button onclick="good()" class="Umbrellas">Shop Now</button>
     </div>
 
     <!-- seventh div -->
@@ -531,3 +532,12 @@
 
   </body>
 </html>
+
+<script>
+    let good = ()=>{
+        window.location.href = "goods.html"
+    }
+    let home = ()=>{
+        window.location.href = "Home.html"
+    }
+</script>
