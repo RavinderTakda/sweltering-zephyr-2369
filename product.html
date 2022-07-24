@@ -27,6 +27,7 @@
     <div id="navbar">
       <div class="company-logo">
         <img
+        onclick="home()"
           src="https://lh3.googleusercontent.com/lCRlZYOdeHIbclzCoJBiJmLyKW1njA2SqQd7GMKiKSE8C_LzQ-cPvageX_AsYBTCvmYI9A=s170"
           alt="OverStock Logo"
         />
@@ -51,9 +52,9 @@
         <div class="cart-logo">
           <i class="bi bi-cart"></i>
           <!-- <img src="https://cdn.iconscout.com/icon/free/png-64/cart-389-458456.png" alt="cart-logo"> -->
-          <p>Cart</p>
+          <p><a href="./cart.html">Cart</a> </p>
         </div>
-        <button id="btn"><i class="bi bi-file-lock-fill"></i>Checkout</button>
+        <button onclick="checkout()" id="btn"><i class="bi bi-file-lock-fill"></i>Checkout</button>
       </div>
     </div>
     <div id="content">
@@ -157,4 +158,12 @@
     </div>
   </body>
 </html>
+<script>
+  let home = ()=>{
+        window.location.href = "Home.html"
+    }
+    let checkout = ()=>{
+        window.location.href = "checkout.html"
+    }
+</script>
 <script src="./scripts/product.js"></script>

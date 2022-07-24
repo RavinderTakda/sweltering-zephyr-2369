@@ -33,6 +33,7 @@
     <div id="navbar">
       <div class="company-logo">
         <img
+        onclick="home()"
           src="https://lh3.googleusercontent.com/lCRlZYOdeHIbclzCoJBiJmLyKW1njA2SqQd7GMKiKSE8C_LzQ-cPvageX_AsYBTCvmYI9A=s170"
           alt="OverStock Logo"
         />
@@ -57,9 +58,9 @@
         <div class="cart-logo">
           <i class="bi bi-cart"></i>
           <!-- <img src="https://cdn.iconscout.com/icon/free/png-64/cart-389-458456.png" alt="cart-logo"> -->
-          <p>Cart</p>
+          <p><a href="./cart.html">Cart</a> </p>
         </div>
-        <button id="btn"><i class="bi bi-file-lock-fill"></i>Checkout</button>
+        <button onclick="checkout()" id="btn"><i class="bi bi-file-lock-fill"></i>Checkout</button>
       </div>
     </div>
     <div id="content">
@@ -152,11 +153,15 @@
     <div id="sortby">
       <p id="h1">Sort by:</p>
 
-      <select name="" id="select">
+      <select name="" onchange="calljaldi()" id="select">
         <option id="bestselling" value="">Best Selling</option>
         <option id="onsale" value="">On Sale</option>
-        <option id="lowtohigh" value="">Price Low - High</option>
-        <option id="hightolow" value="">Price High - Low</option>
+        <option id="lowtohigh" value="Price Low - High">
+          Price Low - High
+        </option>
+        <option id="hightolow" value="Price High - Low">
+          Price High - Low
+        </option>
         <option id="customerrating" value="">Customer Rating</option>
         <option id="newarrivals" value="">New Arrivals</option>
       </select>
@@ -224,5 +229,12 @@
     </div>
   </body>
 </html>
-
+<script>
+    let home = ()=>{
+        window.location.href = "Home.html"
+    }
+    let checkout = ()=>{
+        window.location.href = "checkout.html"
+    }
+</script>
 <script src="./scripts/goods.js"></script>

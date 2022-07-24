@@ -27,7 +27,7 @@
     </div>
     <div id="navbar">
         <div class="company-logo">
-            <img src="https://lh3.googleusercontent.com/lCRlZYOdeHIbclzCoJBiJmLyKW1njA2SqQd7GMKiKSE8C_LzQ-cPvageX_AsYBTCvmYI9A=s170"
+            <img onclick="home()" src="https://lh3.googleusercontent.com/lCRlZYOdeHIbclzCoJBiJmLyKW1njA2SqQd7GMKiKSE8C_LzQ-cPvageX_AsYBTCvmYI9A=s170"
                 alt="OverStock Logo">
         </div>
         <div class="search-logo">
@@ -46,9 +46,9 @@
             </div>
             <div class="cart-logo">
                 <i class="bi bi-cart"></i>
-                <p>Cart</p>
+                <p><a href="./cart.html">Cart</a> </p>
             </div>
-            <button id="btn" ><i class="bi bi-file-lock-fill"></i>Checkout</button>
+            <button onclick="checkout()" id="btn" ><i class="bi bi-file-lock-fill"></i>Checkout</button>
         </div>
 
     </div>
@@ -172,5 +172,10 @@
 </html>
 
 <script src="./scripts/cart.js"></script>
+<script>
+    let home = ()=>{
+        window.location.href = "Home.html"
+    }
+</script>
 
 

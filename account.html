@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Account</title>
+    <script
+      src="https://kit.fontawesome.com/60de47e3f5.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./styles/account.css" />
     <link rel="stylesheet" href="./styles/navbar_footer.css">
   </head>
@@ -26,6 +30,7 @@
     <div id="navbar">
       <div class="company-logo">
         <img
+        onclick="home()"
           src="https://lh3.googleusercontent.com/lCRlZYOdeHIbclzCoJBiJmLyKW1njA2SqQd7GMKiKSE8C_LzQ-cPvageX_AsYBTCvmYI9A=s170"
           alt="OverStock Logo"
         />
@@ -50,9 +55,9 @@
         <div class="cart-logo">
           <i class="bi bi-cart"></i>
           <img src="https://cdn.iconscout.com/icon/free/png-64/cart-389-458456.png" alt="cart-logo">
-          <p>Cart</p>
+          <p><a href="./cart.html">Cart</a> </p>
         </div>
-        <button id="btn"><i class="bi bi-file-lock-fill"></i>Checkout</button>
+        <button onclick="checkout()" id="btn"><i class="bi bi-file-lock-fill"></i>Checkout</button>
       </div>
     </div>
     <div id="content">
@@ -188,3 +193,11 @@
   </body>
 </html>
 <script src="./scripts/account.js"></script>
+<script>
+  let home = ()=>{
+        window.location.href = "Home.html"
+    }
+    let checkout = ()=>{
+        window.location.href = "checkout.html"
+    }
+</script>
