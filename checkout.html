@@ -1,0 +1,226 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="images/overstock-com-squarelogo-1529535998697.png">
+    <title>Overstock-Checkout</title>
+    <link rel="stylesheet" href="./styles/checkout.css">
+    
+  </head>
+  <body>
+    <div id="container">
+      <div id="head">
+        <img
+          src="https://logos-download.com/wp-content/uploads/2017/01/Overstock_logo.png"
+          alt="Overstock_logo"
+        />
+        <p>You are using our secure server</p>
+      </div>
+      <div id="head2">
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/20170922_fedexLogo.png"
+          alt="Fedex"
+        />
+        <p>
+          Secure checkout provided by FedEx International. Your order total
+          includes customs and taxes, if applicable.
+        </p>
+      </div>
+      <div id="select_btn">
+        <select name="" id="">
+          <option value="">UnitedKingdom(English)</option>
+        </select>
+      </div>
+      <div id="head3">
+        <p id="back_to_cart"> >>Back to cart </p>
+        <div id="form_div">
+          <div id="left_form">
+            <h5>Billing Address</h5>
+            <div class="left_form_1">
+              <h5>Email</h5>
+              <input type="text" placeholder="Enter your email" />
+            </div>
+            <div class="left_form_1">
+              <h5>First name</h5>
+              <input type="text" placeholder="Enter your first name" />
+            </div>
+            <div class="left_form_1">
+              <h5>Last name</h5>
+              <input type="text" placeholder="Enter your last name" />
+            </div>
+            <div class="left_form_1">
+              <h5>Company</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>Address Lane 1</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>Address Lane 2</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>Country</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>State</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>ZIP code</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>Phone Number</h5>
+              <input type="number" />
+            </div>
+          </div>
+          <div id="right_form">
+            <h5>Shipping Address</h5>
+            <div class="left_form_1">
+              <h5>Email</h5>
+              <input type="text" placeholder="Enter your email" />
+            </div>
+            <div class="left_form_1">
+              <h5>First name</h5>
+              <input type="text" placeholder="Enter your first name" />
+            </div>
+            <div class="left_form_1">
+              <h5>Last name</h5>
+              <input type="text" placeholder="Enter your last name" />
+            </div>
+            <div class="left_form_1">
+              <h5>Company</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>Address Lane 1</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>Address Lane 2</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>Country</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>State</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>ZIP code</h5>
+              <input type="text" />
+            </div>
+            <div class="left_form_1">
+              <h5>Phone Number</h5>
+              <input type="number" />
+            </div>
+          </div>
+        </div>
+        <div id="shipping_details">
+          <h5>Shipping Method</h5>
+          <div id="radio">
+            <input type="radio" />
+            <p>International Standard</p>
+          </div>
+          <div id="radio1">
+            <input type="radio" />
+            <p>International Express</p>
+          </div>
+        </div>
+        <div id="confirm_order">
+          <h5>Confirm Order</h5>
+          <div id="a1">
+            <p>Subtotal:</p> <p id="subtotal"></p>
+          </div>
+          <div id="a1">
+            <p>Shipping:</p> <p>nil</p>
+          </div>
+          <div id="a1">
+            <p>Duty and Tax:</p> <p>nil</p>
+          </div>
+          <div id="a1">
+            <p>Loss and Damage Protection remove:</p> <p>nil</p>
+          </div>
+          <div id="a1">
+            <h6>Order Total:</h6> <p id="totalorder"></p>
+          </div> 
+        </div>
+        <div id="payment_information">
+          <h5>Payment Information</h5>
+          <div>
+            <img
+              src="https://ztransaction.bongous.com/static/css/images/pm/visa.png"
+              alt=""
+            />
+            <img
+              src="https://ztransaction.bongous.com/static/css/images/pm/mastercard.png"
+              alt=""
+            />
+            <img
+              src="https://ztransaction.bongous.com/static/css/images/pm/bitcoin.png"
+              alt=""
+            />
+          </div>
+          <div id="payment_information1">
+            <h5>Card type</h5>
+            <select name="" id="">
+              <option value="">Visa</option>
+              <option value="">Mastercard</option>
+              <option value="">Bitcoin</option>
+            </select>
+          </div>
+          <div id="payment_information1">
+            <h5>Credit Card Number</h5>
+            <input type="text" />
+          </div>
+          <div id="payment_information1">
+            <h5>Expiration Date</h5>
+            <input type="month" />
+          </div>
+          <div id="payment_information1">
+            <h5>Security Code</h5>
+            <input type="text" />
+          </div>
+        </div>
+
+        <img
+          src="https://storage.crossborder.fedex.com/s3bongous/f98ca95b1b79417f2c4685355a3cfba2.png"
+          alt=""
+        />
+
+        <div id="signup_select">
+          <input type="radio" />
+          <p>
+            When you sign up for email, you'll get exclusive coupons, sale
+            notifications, and product ideas.
+          </p>
+        </div>
+
+        <button id="place_order" onclick="sucess()">Place Order>></button>
+      </div>
+    </div>
+    <img id="footer_img" src="./images/Screenshot (156)b.png" alt="" />
+  </body>
+</html>
+<script>
+
+let sucess = ()=>{
+
+    alert("Order Successful");
+    window.location.href = 'Home.html'
+}
+
+let bill =  JSON.parse(localStorage.getItem('cartPrice'));
+
+
+document.getElementById('subtotal').innerText = "INR  " + bill;
+document.getElementById('totalorder').innerText = "INR  " + bill;
+
+</script>
+
